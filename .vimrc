@@ -1,6 +1,5 @@
 " comfy vimrc for comfy server admin
 "
-colortheme jellybeans
 set relativenumber               " Show relative line numbers to help with line-based navigation
 set number                       " Display the absolute line number for the current line
 set nocompatible                 " Disable vi compatibility mode for better Vim-specific features
@@ -8,11 +7,9 @@ set backspace=indent,eol,start   " Allow backspacing over indentation, line brea
 set ruler                        " Show the cursor position (line and column) in the status line
 set guioptions=ac                " GUI options: enable scrollbar arrows (a) and close button (c)
 set mouse=a                      " Enable mouse support in all modes (normal, insert, visual, etc.)
-set backspace=indent,eol,start   " (Duplicate) Allow backspacing over indentations, line ends, and insert starts
 syntax enable                    " Enable syntax highlighting based on file type
 set si                           " Enable smart indenting when starting a new line
 set ai                           " Enable automatic indentation of new lines
-set bg=dark                      " Set background color scheme to dark for better visibility
 set softtabstop=4                " Insert/delete up to 4 spaces when hitting the tab key, depending on context
 set shiftwidth=4                 " Use 4 spaces for automatic indentation
 set tabstop=4                    " Set a tab character to be displayed as 4 spaces
@@ -32,3 +29,4 @@ set laststatus=2                 " Always display the status line, even with onl
 set showcmd                      " Display incomplete commands in the status line for better visibility
 set noeol                        " Do not add an end-of-line character to the last line of the file
 set et                           " Convert tabs to spaces when editing
+colorscheme jellybeans
