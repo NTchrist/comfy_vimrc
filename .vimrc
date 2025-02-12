@@ -7,6 +7,7 @@ set backspace=indent,eol,start   " Allow backspacing over indentation, line brea
 set ruler                        " Show the cursor position (line and column) in the status line
 set guioptions=ac                " GUI options: enable scrollbar arrows (a) and close button (c)
 set mouse=a                      " Enable mouse support in all modes (normal, insert, visual, etc.)
+set ttymouse=sgr                 " Set mouse mode for more modern terminals
 syntax enable                    " Enable syntax highlighting based on file type
 set si                           " Enable smart indenting when starting a new line
 set ai                           " Enable automatic indentation of new lines
@@ -17,9 +18,9 @@ set smarttab                     " Make tab and backspace behavior context-aware
 set nobackup                     " Disable backup file creation to prevent clutter
 set hlsearch                     " Highlight all matching search results
 set incsearch                    " Show search matches incrementally as you type
-set noshowmatch                  " Disable showing matching pairs of brackets/parentheses
 set nofsync                      " Disable file syncing for faster disk operations (may risk data loss on crashes)
-set pastetoggle=<F11>            " Toggle paste mode with F11 to prevent autoformatting when pasting
+set pastetoggle=<F11>            " Toggle paste mode with F11 to toggle autoformatting when pasting
+set paste                        " Disables autoformatting by default when pasting
 set scrolloff=5                  " Keep at least 5 lines of context above and below the cursor
 set swapsync=                    " Disable swap file syncing to disk for performance improvements
 let cscflag = ""                 " Initialize a custom flag for use in the status line
@@ -29,4 +30,6 @@ set laststatus=2                 " Always display the status line, even with onl
 set showcmd                      " Display incomplete commands in the status line for better visibility
 set noeol                        " Do not add an end-of-line character to the last line of the file
 set et                           " Convert tabs to spaces when editing
-colorscheme jellybeans
+set cursorline                   " Set a highlight line
+set cursorcolumn                 " Set a highlight column
+colorscheme jellybeans           " Set custom colorscheme
