@@ -1,11 +1,6 @@
 " comfy vimrc for comfy server admin
 "
-" Set reasonable color scheme if the terminal supports it
-if &term =~ "xterm-debian" || &term =~ "xterm-xfree86" || &term =~ "urxvt" || &term =~ "rxvt" || &term =~ "uxterm" || &term =~ "xterm" || &term =~ "rxvt-unicode"
-  set t_Sf=ESC[3%dm
-  set t_Sb=ESC[4%dm
-  set ttyfast
-endif
+colortheme jellybeans
 set relativenumber               " Show relative line numbers to help with line-based navigation
 set number                       " Display the absolute line number for the current line
 set nocompatible                 " Disable vi compatibility mode for better Vim-specific features
