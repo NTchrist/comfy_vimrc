@@ -1,5 +1,7 @@
-" comfy vimrc for comfy server admin
 "
+" comfy vimrc for comfy server adminning
+"
+
 set relativenumber               " Show relative line numbers to help with line-based navigation
 set number                       " Display the absolute line number for the current line
 set nocompatible                 " Disable vi compatibility mode for better Vim-specific features
@@ -30,6 +32,8 @@ set laststatus=2                 " Always display the status line, even with onl
 set showcmd                      " Display incomplete commands in the status line for better visibility
 set noeol                        " Do not add an end-of-line character to the last line of the file
 set et                           " Convert tabs to spaces when editing
-set cursorline                   " Set a highlight line
-set cursorcolumn                 " Set a highlight column
+if &t_Co >= 256
+    set cursorline               " Set a highlight line
+    set cursorcolumn             " Set a highlight column
+endif
 colorscheme jellybeans           " Set custom colorscheme
